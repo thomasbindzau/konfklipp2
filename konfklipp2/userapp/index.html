@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="userApp" class="no-js"> <!--<![endif]-->
+<head>    
+    <title>Konferensklipp</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/common/content/MyFontsWebFontKit.css">
+    <link rel="stylesheet" href="/common/content/webfonts/font-awesome-4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <div ng-if="true" ng-cloak>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div collapse="isCollapsed"  id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" auto-active>
+                        <li ng-click="isCollapsed=!isCollapsed" ><a href="#/start">HEM</a></li>
+                        <li ng-click="isCollapsed=!isCollapsed" ><a href="#/login">LOGGA IN</a></li>
+                        <li ng-click="isCollapsed=!isCollapsed"><a href="#/sales">KONFERENSSÄLJARE</a></li>
+                        <li ng-click="isCollapsed=!isCollapsed"><a href="#/about">OM OSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="/bower_components/angular/angular.js"></script>
+ <script src="/bower_components/angular-touch/angular-touch.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/angular-messages/angular-messages.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+<!--app code-->
+<script src="userapp.js"></script>
+<script src="start/start.js"></script>
+<script src="search/search.js"></script>
+<script src="service.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<div class="container">
+    <div class="row solid">
+        <div class="col-xs-12 col-md-8 margin-top-med">
+            <div class="row">
+                <div class="text-center margin-top-small">
+                    <span class="heading3Light">Sökresultat för {{vm.searchParam.destination}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8  margin-top-xlarge">
+                    <input type="text" class="input input-sm" ng-model="vm.searchParam.destination" placeholder="Vart vill ni åka?"/><input type="date" ng-model="vm.searchParam.from" class="input input-sm" placeholder="Datum"/>
+                    <button ng-click="vm.search()" class="btn btn-info"><span class="fa fa-search aweFontSize"></span></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 res1img">
+                </div>
+                <div class="col-xs-12 col-md-6 res2img">
+                </div>
+                <div class="col-xs-12 col-md-6 res3img">
+                </div>
+                <div class="col-xs-12 col-md-6 res4img">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 margin-top-med">
+            <div class="mapimg col-xs-12"></div>
+        </div>
+    </div>
+</div>
