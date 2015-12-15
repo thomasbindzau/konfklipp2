@@ -244,15 +244,15 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 300px; /* TODO: Fix without hard coding size*/
+    height: 600px; /* TODO: Fix without hard coding size*/
 }
 
 .res1img {
     background-image: url('/common/content/images/resultat1.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    width: 350px;
-    height: 220px; 
+    width: 370px;
+    height: 230px; 
 }
 .res2img {
     background-image: url('/common/content/images/resultat2.jpg');
