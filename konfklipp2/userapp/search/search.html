@@ -7,22 +7,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-8  margin-top-xlarge">
-                    <input type="text" class="input input-sm" ng-model="vm.searchParam.destination" placeholder="Vart vill ni åka?"/><input type="date" ng-model="vm.searchParam.from" class="input input-sm" placeholder="Datum"/>
+                <div class="col-xs-12  margin-top-xlarge">
+                    <input type="text" class="input input-lg" ng-model="vm.searchParam.destination" placeholder="Vart vill ni åka?" /><input type="date" ng-model="vm.searchParam.from" class="input input-lg" placeholder="Datum" />
                     <button ng-click="vm.search()" class="btn btn-info"><span class="fa fa-search aweFontSize"></span></button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6 ">
+                <div class="col-xs-12  margin-top-xsmall">
+                    <button ng-click="vm.showFilter()" class="btn btn-info"><span class="fa fa-arrow-down aweFontSize">Fler sökparametrar</span></button>
+                    <button  class="btn btn-info">Sortering <span class="caret"></span></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 pointer" ng-click="vm.result('Hotell 1')">
                     <img src="/common/content/images/resultat1.jpg" width="100%" height="180px"/>
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-6 pointer" ng-click="vm.result('Konferensen')">
                     <img src="/common/content/images/resultat2.jpg" width="100%" height="180px" />
                 </div>
-                <div class="col-xs-12 col-md-6 ">
+                <div class="col-xs-12 col-md-6 pointer" ng-click="vm.result('Natursköna hotellet')">
                     <img src="/common/content/images/resultat3.jpg" width="100%" height="180px" />
                 </div>
-                <div class="col-xs-12 col-md-6 ">
+                <div class="col-xs-12 col-md-6 pointer" ng-click="vm.result('Din favoritplats')">
                     <img src="/common/content/images/resultat4.jpg" width="100%" height="180px" />
                 </div>
             </div>

@@ -421,6 +421,8 @@
     <Content Include="index.html" />
     <Content Include="userapp\app.css" />
     <Content Include="userapp\index.html" />
+    <Content Include="userapp\result\result.html" />
+    <Content Include="userapp\result\result.js" />
     <Content Include="userapp\search\search.html" />
     <Content Include="userapp\search\search.js" />
     <Content Include="userapp\service.js" />

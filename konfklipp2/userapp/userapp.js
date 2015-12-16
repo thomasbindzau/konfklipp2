@@ -10,6 +10,7 @@
             'ngMessages',
             'userApp.start',
             'userApp.search',
+            'userApp.result',
             'userApp.service'
     ])
         .config(config)

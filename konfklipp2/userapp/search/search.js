@@ -14,7 +14,7 @@
         ]);
 
     angular
-    .module('userApp.start')
+    .module('userApp.search')
     .controller('SearchController', searchController);
 
     searchController.$inject = ['$window', '$location', 'Service'];
@@ -23,6 +23,11 @@
         var vm = this;
 
         vm.searchParam = service.getSearch();
+
+        vm.result = function (dest) {
+            service.setResult(dest);
+            $location.path('/result');
+        }
 
 
     }
